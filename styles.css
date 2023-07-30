@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Graphik-Regular", "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", 
+                    Helvetica, Arial, sans-serif !important;
+}
+#logo{
+    height: 85%;
+    width: 85%;
+    object-fit: fill;
+    margin: 0;
+    filter: contrast(200%);
+}
+#logo:hover{
+    height: 85%;
+    width: 85%;
+    margin: 0;
+    filter: contrast(200%);
+    cursor: pointer;
+}
+#icones{
+    filter: hue-rotate(160deg);
+}
+#opcoes-contato{
+    font-size: 75%;
+    align-items: baseline;
+    text-decoration: underline;
+}
+#form-title{
+    padding: 15px 15px 35px;
+}
+#form-email{
+    padding: 15px 15px 15px 15px;
+}
+#form-password{
+    padding: 15px 15px 15px 15px;
+}
+#span-email{
+    position: absolute;
+}
+#span-senha{
+    position: absolute;
+}
+#sobre-page{
+    display: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 3.5%;
+    background-color: #7e2121;
+    font-size: 300%;
+    color: #ffffff;
+    text-shadow: #0a0a0a 2px 2px;
+}
+#botao-home{
+    border: none;
+    appearance: none;
+    background-color: inherit;
+    width: 15%;
+}
+.luxo:hover{
+    font-style: italic;
+    cursor: pointer;
+}
+.popular:hover{
+    font-style: italic;
+    cursor: pointer;
+}
+.sobre{
+    border: none;
+    background-color: #ffffff;
+    color: #ff3939;
+    font-size: inherit;
+    font-family: inherit;
+}
+.sobre:hover{
+    font-style: italic;
+    cursor: pointer;
+}
+.contato-header:hover{
+    font-style: italic;
+    cursor: pointer;
+}
+.conta:hover{
+    font-style: italic;
+    cursor: pointer;
+}
+.login:hover{
+    font-style: italic;
+    cursor: pointer;
+}
+.contato-footer{
+    display: inline-flex;
+    flex-direction: column;
+    justify-self: normal;
+    align-items: center;
+    padding: 20px;
+}
+.redes-sociais{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr;
+    justify-items: center;
+    padding: 20px;
+}
+.overlay{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 30px);
+    position: absolute;
+    left: 0;
+    top:15%;
+    gap: 20px;
+    padding: 25px;
+}
+.overlay_0{
+    grid-area: 1 / span 8;
+    display: inline;
+    font-size: 150%;
+    color: #ffffff;
+    text-shadow: #0a0a0a 5px 2px;
+}
+.overlay_1{
+    grid-area: 3 / 9 / span 5 / span 4;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    padding: 15px 15px 35px;
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+.background-image{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    filter: saturate(200%);
+}
+.homepage{
+    position: relative;
+}
+main{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+input{
+    border: none;
+    border-bottom: 1.5px;
+    border-bottom-style: solid;
+    width: 350px;
+    outline: none;
+}
+header {
+    background-color: #ffffff;
+    display: inline-flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color: #ff3939;
+    align-items: center;
+    border:5px;
+    border-bottom-style: solid;
+    border-color: #ff3939;
+    font-size: inherit;
+    padding: 30px;
+}
+footer{
+    background-color: #0a0a0a;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    width: 100%; 
+    object-fit: cover;
+    color: #ff3939;
+    font-size: inherit;
+    border: 7px;
+    border-top: #ff3939;
+    border-top-style: solid;
+}
+body{
+    box-sizing: border-box;
+    font-size: 24px;
+}
+@media screen and (min-device-width : 481px) and (max-device-width : 900px) {
+    /*Tablets*/
+    body{
+        font-size: 16px;
+    }
+    main{
+        font-size: 10px;
+    }
+    #form-title{
+        width: 100px;
+    }
+    input{
+        width: 200px;
+    }
+    #form{
+        width: 200px;
+    }
+}
+@media screen and (min-device-width : 901px) and (max-device-width :1200px) {
+    
+}
