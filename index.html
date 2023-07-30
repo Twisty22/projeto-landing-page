@@ -1,34 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4Cars</title>
-</head>
-<body>
-    <img src="./imagens/4cars.png" alt="/imagem/">
-    <div>Linha de Luxo</div>
-    <div>Linha Popular</div>
-    <div>Sobre nós</div>
-    <div>Contate-nos</div>
-    <div>Login</div>
-    <div>Criar conta</div>
-    <div>Começe o processo de aluguel faça login:</div>
-    <div>Digite aqui o seu e-mail</div>
-    <button><div>Continuar</div></button>
-    <div>Suas férias merecem um carrão assim. Alugue os carros mais NOVOS e MODERNOS do Brasil.</div>
-    <div>Carro por assinatura sem burocracia e com tudo incluso. </div>
-    <div>Alugue agora!</div>
-    <div>Sobre nós</div>
-    <div>Produtos</div>
-    <div>Veja Também</div>
-    <div>Contate-nos</div>
-    <img src="./imagens/CACT.png" alt="/imagem/">
-    <img src="./imagens/CORO.png" alt="/imagem/">
-    <img src="./imagens/CROX.png" alt="/imagem/">
-    <img src="./imagens/DUST.png" alt="/imagem/">
-    <img src="./imagens/img-turismo-cupom.jpg" alt="/imagem/">
-    <img src="./imagens/PEUA.png" alt="/imagem/">
-    <img src="./imagens/RENE.png" alt="/imagem/">
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>4Cars</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <header>  
+            <button id="botao-home" onclick="voltaHome()">
+                <img id="logo" src="./imagens/4cars.png" alt="/imagem/">
+            </button>
+            <div class="luxo">Linha de Luxo</div>
+            <div class="popular">Linha Popular</div>
+            <button onclick="secaoSobre()" class="sobre">Sobre nós</button>
+            <div class="contato-header">Contate-nos</div>
+            <div class="conta">Criar conta</div>
+            <div class="login">Login</div>
+        </header>
+        <main>
+            <div class="homepage" id="home">
+                <img class="background-image" src="./imagens/Background image.png" alt="/imagem/">
+                <div class="overlay">
+                    <div class="overlay_0">
+                        <h1>Suas férias merecem um carrão assim. Alugue os carros mais NOVOS e MODERNOS do Brasil.</h1>
+                        <h1>Carros por assinatura sem burocracia e com tudo incluso.</h1>
+                        <h1>Alugue agora!</h1>
+                    </div>
+                    <form action="#" novalidate="" class="overlay_1">
+                        <h1 id="form-title">Começe o processo de aluguel faça login:</h1>
+                        <label id="form-email">
+                            <div>
+                                <span id="span-email">Digite aqui o seu e-mail</span>
+                            </div>
+                            <input onfocus="mudaPosicaoInputEmail()" id="email" type="email" aria-required="true" aria-invalid="true" name="email" value="" required="">
+                        </label>
+                        <label id="form-password">
+                            <div>
+                                <span id="span-senha">Digite aqui a sua senha</span>
+                            </div>
+                            <input onfocus="mudaPosicaoInputSenha()" id="senha" type="password" aria-required="true" aria-invalid="true" name="email" value="" required="">
+                        </label>
+                        <button id="form" onclick="checarLogin()">Continuar</button>
+                    </form>
+                </div>
+            </div>
+            <div id="sobre-page">
+                <div>
+                    <p> A 4Cars é uma empresa que tem surfado na onda dos apps de motoristas.
+                         Nossa proposta é oferecer carros para serem alugados por motoristas a um custo razoável,
+                         aumentando a oportunidade para quem não têm dinheiro para comprar um carro.
+                         Oferecemos duas linhas de produto: carros populares e transporte de luxo.
+                         Nosso objetivo é oferecer modernidade e baixo custo, se posicionando
+                         como uma plataforma totalmente digital e de fácil acesso para motoristas jovens que estão
+                         buscando entrar nesse mercado.</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="redes-sociais">
+                <div id="veja">Veja Também</div>
+                <div id="icones">
+                    <img src="./imagens/icons8-facebook-48.png" alt="/imagem/">
+                    <img src="./imagens/icons8-twitter-48.png" alt="/imagem/">
+                </div>
+            </div>
+            <div class="contato-footer">
+                <div>Contate-nos
+                    <div id="opcoes-contato">
+                        <div>contato@4cars.com</div>
+                        <div>+55 21 97875-5562</div>
+                        <div>Rua Capote Valente, 39 - São Paulo, SP - 05409-000</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
